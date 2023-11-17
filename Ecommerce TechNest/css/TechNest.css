@@ -1,0 +1,301 @@
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações gerais do body */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #050a0e;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 60px;
+    height: 60px;
+    pointer-events: none;
+}
+
+.header-title {
+    color: white;
+    font-size: 30px;
+}
+
+/* Estilos da barra de navegação */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+/* Estilos dos links na barra de navegação */
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+/* Estilo dos links ao passar o mouse */
+nav a:hover {
+    color: lightcyan;
+}
+
+.banner img {
+    width: 100%;
+}
+
+/* Estilos da seção de produtos */
+.product-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    user-select: none;
+    margin-top: -4px;
+    width: 100%;
+    background-color: #d9be6c;
+}
+
+/* Estilos do cartão de produto */
+/* Estilos do cartão de produto */
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    margin: 10px;
+    background-color: #2a79b9;
+}
+
+
+/* Estilos da imagem nos cartões de produto */
+.product-card img {
+    max-width: 100%;
+    height: 200px;
+    pointer-events: none;
+}
+
+/* Estilos do título nos cartões de produto */
+.product-card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+/* Estilos do texto nos cartões de produto */
+.product-card p {
+    font-size: 1em;
+}
+
+/* Estilos do preço nos cartões de produto */
+.product-card .price {
+    font-weight: bold;
+    color: #050a0e;
+    font-size: 30px;
+}
+
+/* Estilos do botão nos cartões de produto */
+.product-card button {
+    background-color: #2a4359;
+    color: white;
+    font-size: 20px;
+    border: none;
+    padding: 15px 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Estilos do botão ao passar o mouse */
+.product-card:hover button {
+    background-color: #050a0e;
+}
+
+/* Estilos da seção de cadastro */
+.secao-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #050a0e;
+    height: 80vh;
+}
+
+/* Estilos do contêiner do formulário de cadastro */
+.container {
+    max-width: 398px;
+    width: 100%;
+    margin-top: -6px;
+}
+
+/* Estilos do formulário de cadastro */
+.formulario-cadastro {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos do título do formulário de cadastro */
+.formulario-cadastro h2 {
+    text-align: center;
+    margin-bottom: 27px;
+    color: #333;
+    user-select: none;
+    margin-top: 40px;
+    margin-left: 27px;
+    color: blue;
+}
+
+/* Estilos das etiquetas no formulário de cadastro */
+.formulario-cadastro label {
+    display: block;
+    margin-bottom: 8px;
+    user-select: none;
+}
+
+/* Outros estilos dos campos de entrada no formulário de cadastro */
+.formulario-cadastro input {
+    width: calc(100% - 16px);
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Estilos do botão no formulário de cadastro */
+.formulario-cadastro button {
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s; /* Adiciona uma transição suave na mudança de cor */
+}
+
+/* Estilos do botão ao passar o mouse */
+.formulario-cadastro button:hover {
+    background-color: #555;
+}
+
+
+/* Estilos do rodapé */
+footer {
+    background-color: #506175;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Estilos do conteúdo do rodapé */
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+/* Estilos para cada elemento no rodapé */
+.footer-content .left,
+.footer-content .center,
+.footer-content .right {
+    flex-grow: 1;
+}
+
+.footer-content .center {
+    text-align: center;
+}
+
+.footer-content .right {
+    text-align: right;
+}
+
+/* Estilos adicionais para a página de cadastro */
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 600px;
+    max-width: 100%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.input-container {
+    position: relative;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-icon {
+    position: absolute;
+    top: 59%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: #aaa;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.input-container input,
+.input-container select {
+    padding-left: 40px;
+}

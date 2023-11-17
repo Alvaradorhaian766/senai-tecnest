@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            user-select: none;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .logo-container {
+            width: 100%;
+            background-color: black;
+            text-align: center;
+            position: relative;
+        }
+
+        .header-logotipo {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-logotipo img {
+            width: 100%;
+            height: 212px;
+            pointer-events: none;
+        }
+
+        header {
+            background-color: yellow;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: white;
+            color: black;
+            transition: background-color 0.3s ease;
+            border: 2px solid white;
+            user-select: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #333;
+        }
+
+        /* Dropdown styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: black;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 5px;
+            top: 100%;
+            left: 0;
+            width: 160px; /* Ajuste a largura conforme necessário */
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555; /* Alterado para cor mais escura ao passar o mouse */
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            background-color: black; /* Adicionado fundo preto ao abrir */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- logotipo -->
+    <div class="logo-container">
+        <div class="header-logotipo">
+            <img src="Imagens/visacont.jfif" alt="" srcset="">
+        </div>
+    </div>
+
+    <!-- cabeçalho do site -->
+    <header>
+        <!-- navegação -->
+        <nav>
+            <ul>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Serviços</a>
+                    <div class="dropdown-content">
+                        <a href="#">Serviço 1</a>
+                        <a href="#">Serviço 2</a>
+                        <a href="#">Serviço 3</a>
+                    </div>
+                </li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
